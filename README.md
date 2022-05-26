@@ -20,7 +20,7 @@ Cambiala por:
 ```html
   <base href="/">
 ```
-Ahora solo falta que arranques el servidor haciendo:
+Ahora solo falta que arranques el servidor haciendo dentro de la terminal:
 ```bash
   npm run start
 ```
