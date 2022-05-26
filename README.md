@@ -30,3 +30,8 @@ Y podrás disfutar del proyecto
 ## Autor
 
 - [@sergiomogm](https://www.github.com/sergiomogm)
+
+## Ayuda
+
+Para cualquier duda o consulta no dudes en escribirme a contacto@sergiomogm.com
+
