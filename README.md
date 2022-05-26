@@ -1,6 +1,7 @@
 # OrangeTv
-Aplicación de Orange Tv en angular con Api REST
-![Imagen Aplicación](captura-app.jpg?raw=true "Orange Tv")
+Aplicación de Orange Tv en angular con Api REST.
+
+![Imagen Aplicación](/captura-app.jpg?raw=true "Orange Tv")
 
 ## Installation
 
