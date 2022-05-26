@@ -1,0 +1,193 @@
+.pelicula{
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    transition: all .5s ease;
+    @media screen and (max-width:1000px) {
+        min-height: 60vh;
+    }
+    @media screen and (max-width:600px) {
+        min-height: 40vh;
+    }
+    &__gradienteabajo{
+        position: absolute;
+        height: 66%;
+        width: 100%;
+        bottom: 0;
+        background: linear-gradient(0deg,#000000 0%,rgba(0,0,0,0) 97.92%);
+        z-index: 1;
+    }
+    &__gradienteizquierda{
+        position: absolute;
+        height: 100%;
+        width: 73%;
+        left: 0;
+        background: linear-gradient(90deg,black 0%,rgba(0,0,0,0) 97.92%);
+        z-index: 2;
+    }
+
+    &__contenido{
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        padding: 1em;
+        max-width: 50%;
+        color: white;
+        font-weight: 600;
+        z-index: 3;
+        transition: all .5s ease;
+        @media screen and (max-width:1000px) {
+        }
+        @media screen and (max-width:700px) {
+            bottom: 0;
+        }
+    }
+    &__titulo{
+        color: #fff;
+        font-size: 4.5em;
+        line-height: 1.2em;
+        @media screen and (max-width:1000px) {
+            font-size: 3.6em;
+        }
+        @media screen and (max-width:700px) {
+            font-size: 2.7em;
+        }
+    }
+    &__specs{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.5em;
+        padding: .6em 0 1em 0;
+        @media screen and (max-width:1000px) {
+            font-size: 1.2em;
+        }
+        @media screen and (max-width:700px) {
+            font-size: 0.9em;
+        }
+    }
+    &__spec{
+        margin: 0 0.25em 0 0;
+    }
+    &__edad{
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        align-items: center;
+        border-radius: 4px;
+        margin: 0 0.5em 0 0.5em;
+        font-weight: 400;
+        font-size: .8em;
+        padding: 0.1em 0.6em;
+        background-color: green;
+        &.tp{
+            background-color: green;
+        }
+        &.doce{
+            background-color: rgb(255, 180, 0);
+        }
+        &.dieciseis{
+            background-color: rgb(241, 110, 0);
+        }
+        &.dieciocho{
+            background-color: rgb(205, 60, 20);
+        }
+        &.siete{
+            background-color: rgb(8, 94, 189);
+        }
+    }
+    &__categoria span{
+        background-color: #d6d6d64d;
+        border-radius: 4px;
+        padding: 0.5em 1em;
+    }
+    &__desc{
+        margin: .9em 0; 
+        font-weight: 400;
+        font-size: 1.25em;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        line-height: 1.3em;
+        max-width: 700px;
+        @media screen and (max-width:1000px) {
+            font-size: .75em;
+        }
+    }
+    &__lenguaje{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 500;    
+        font-size: 1em;
+        @media screen and (max-width:1000px) {
+            font-size: .5em;
+        }
+        & span{
+            padding-right: 2em;
+        }
+
+    }
+}
+.info{
+    width: 100%;
+    min-height: 40vh;
+    margin-top: 10em;
+    padding: 2.5em 0;
+    color: white;
+    background-color: #121212;
+    &__centrado{
+        width: 90%;
+        margin: auto;
+    }
+    &__h3{
+        font-weight: 600;
+        font-size: 2em;
+        padding-bottom: 2em;
+    }
+    &__contenido{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        @media screen and (max-width:700px) {
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+    }
+    &__sinopsis{
+        width: 60%;
+        padding-right: 3em;
+        @media screen and (max-width:700px) {
+            width: 100%;
+            padding: 2em 0;
+        }
+    }
+    &__idiomas{
+        padding-left: 1em;
+        border-left: 2px solid #8f8f8f;
+        @media screen and (max-width:700px) {
+            border-left: none;
+            border-top: 2px solid #8f8f8f;
+            padding: 2em 0;
+            width: 100%;
+        }
+    }
+    &__span{
+        font-size: 1.25em;
+        color: #8f8f8f;
+    }
+    &__texto{
+        line-height: 1.3em;
+        font-size: 1.25em;
+        padding: 1em 0 2em 0;
+        &.abajo{
+            padding-bottom: 0;
+        }
+    }
+}

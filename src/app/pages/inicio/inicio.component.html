@@ -1,0 +1,12 @@
+<main class="main">
+    <app-cabecera></app-cabecera>
+<app-slider-grande
+    [destacados] = "destacados"
+    ></app-slider-grande>
+<app-slider
+    *ngFor = "let slider of sliders"
+    [titulo] = " slider.titulo "
+    [slides] = " slider.slides "
+    [elementoVisible] = "6"
+    ></app-slider>
+</main>

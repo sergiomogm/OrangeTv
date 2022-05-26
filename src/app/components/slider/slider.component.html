@@ -1,0 +1,30 @@
+<div class="slider">
+    <div (click) = "disminuirNumero()" class="slider__flecha izquierda">
+        <svg xmlns="http://www.w3.org/2000/svg" class="slider__svg" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg>
+    </div>
+    <div (click) = "aumentarNumero()" class="slider__flecha derecha">
+        <svg xmlns="http://www.w3.org/2000/svg" class="slider__svg" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+    </div>
+    <div class="slider__centrado">
+    <h2 class="slider__h2">{{titulo}}</h2>
+    <div 
+     *ngIf=" slides.length >= 1 "
+        [ngStyle]= "{
+            width     : ancho(),
+            transform : translateX(),
+            gridTemplateColumns : grid() }"
+        class="slider__move">
+             <app-slider-card
+             *ngFor = "let card of slides"
+             [props] = "card" 
+             ></app-slider-card>
+     </div>
+     <div 
+     *ngIf=" slides.length === 0 "
+     class="slider__mensaje">No existen Elementos para mostrar </div>
+    </div>
+</div>
