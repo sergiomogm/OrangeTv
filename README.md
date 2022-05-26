@@ -27,3 +27,6 @@ Ahora solo falta que arranques el servidor haciendo dentro de la terminal:
   npm run start
 ```
 Y podrás disfutar del proyecto
+## Autor
+
+- [@sergiomogm](https://www.github.com/sergiomogm)
