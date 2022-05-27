@@ -3,7 +3,7 @@ Aplicación de Orange Tv en angular con Api REST.
 
 ![Imagen Aplicación](/captura-app.png?raw=true "Orange Tv")
 
-## Installation
+## Instalación
 
 ¿Quieres instalar mi proyecto para verlo desde tu ordenador? Puedes seguir los siguientes pasos:
 
