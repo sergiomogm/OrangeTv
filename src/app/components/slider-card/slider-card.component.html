@@ -1,0 +1,14 @@
+<a
+    [routerLink]="[ '/pelicula' , props.href ]"
+    [title] = "props.nombre" 
+    class="card">
+    <div class="card__negro"><img [src]="props.img" [alt]="props.nombre" class="card__img"></div>
+    <div class="card__row">
+        <h2 class="card__titulo">{{props.nombre}}</h2>
+        <span class="card__tipo">{{props.tipo}}
+            <svg xmlns="http://www.w3.org/2000/svg" class="card__svg" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </span>
+    </div>
+</a>
